@@ -11,7 +11,7 @@ import MobileCenter
 import MobileCenterPush
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,MSPushDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate, MSPushDelegate{
 
     var window: UIWindow?
 
