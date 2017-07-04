@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import MobileCenter
+import MobileCenterPush
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,MSPushDelegate{
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        MSPush.setDelegate(self)
+        MSMobileCenter.start("83a6437f-a5ca-4670-b7b7-b9f57f1d1204", withServices:[
+            MSPush.self
+            ])
+        
         // Override point for customization after application launch.
         return true
     }
@@ -40,7 +47,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    func push(_ push: MSPush!, didReceive pushNotification: MSPushNotification!) {
+       var message: String = pushNotification.message
+        for item in pushNotification.customData {
+            message = String(format: "%@\n%@: %@", message, item.key, item.value)
+        }
+        let alert = UIAlertView(title: pushNotification.title, message: message, delegate: self, cancelButtonTitle: "OK")
+        alert.show()
+    }
 }
 
