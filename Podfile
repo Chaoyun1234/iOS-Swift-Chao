@@ -3,6 +3,8 @@
 
 target 'iOS-Swift-Chao' do
   pod 'MobileCenter'
+  pod 'MobileCenter/Crashes'
+  pod 'MobileCenter/Analytics'
   pod 'MobileCenter/Push'
   end
 

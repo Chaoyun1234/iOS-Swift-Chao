@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import MobileCenterAnalytics
 
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        MSAnalytics.trackEvent("First_Click")
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -8,6 +8,8 @@
 
 import UIKit
 import MobileCenter
+import MobileCenterCrashes
+import MobileCenterAnalytics
 import MobileCenterPush
 
 @UIApplicationMain
@@ -18,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSPushDelegate{
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         MSPush.setDelegate(self)
-        MSMobileCenter.start("83a6437f-a5ca-4670-b7b7-b9f57f1d1204", withServices:[
+        MSMobileCenter.start("ef808c33-397c-444a-b93b-35e64b84ad9e", withServices:[
+            MSAnalytics.self,
+            MSCrashes.self,
             MSPush.self
             ])
         

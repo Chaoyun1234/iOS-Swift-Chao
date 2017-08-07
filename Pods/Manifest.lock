@@ -12,11 +12,13 @@ PODS:
 
 DEPENDENCIES:
   - MobileCenter
+  - MobileCenter/Analytics
+  - MobileCenter/Crashes
   - MobileCenter/Push
 
 SPEC CHECKSUMS:
   MobileCenter: 2ef7c02fd337dbde11cf15552c2006db2c3774c3
 
-PODFILE CHECKSUM: 8458ef4c9984d098a64c41c76362010d65f83746
+PODFILE CHECKSUM: f3fdcc6012e56d5909557a39635fe297645da3fe
 
 COCOAPODS: 1.2.1
