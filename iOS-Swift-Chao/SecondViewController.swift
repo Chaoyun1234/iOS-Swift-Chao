@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MobileCenterCrashes
 import MobileCenterAnalytics
 
 class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        MSCrashes.generateTestCrash()
         MSAnalytics .trackEvent("Second_Click")
         // Do any additional setup after loading the view, typically from a nib.
     }
