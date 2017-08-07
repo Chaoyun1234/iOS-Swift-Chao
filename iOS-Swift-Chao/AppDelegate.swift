@@ -26,6 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSPushDelegate{
             MSPush.self
             ])
         
+        MSMobileCenter.setLogLevel(MSLogLevel.verbose)
+        var installId = MSMobileCenter.installId()
+        
+        var customProperties = MSCustomProperties()
+        customProperties.setString("blue", forKey: "color")
+        customProperties.setNumber(10, forKey: "score")
+        customProperties.clearProperty(forKey: "score")
+        MSMobileCenter.setCustomProperties(customProperties)
         // Override point for customization after application launch.
         return true
     }
