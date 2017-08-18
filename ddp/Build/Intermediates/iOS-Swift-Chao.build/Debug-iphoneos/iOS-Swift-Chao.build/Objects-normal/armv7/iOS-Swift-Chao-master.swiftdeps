@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "1b4dbae26f23f9b3121b91ba20d0bb73"
+build_time: [556354740, 332402000]
+inputs:
+  "/Users/bys/Documents/Chaoyun/iOS-Swift-Chao/iOS-Swift-Chao/SecondViewController.swift": [556335742, 0]
+  "/Users/bys/Documents/Chaoyun/iOS-Swift-Chao/iOS-Swift-Chao/AppDelegate.swift": [556336498, 0]
+  "/Users/bys/Documents/Chaoyun/iOS-Swift-Chao/iOS-Swift-Chao/FirstViewController.swift": [556335742, 0]

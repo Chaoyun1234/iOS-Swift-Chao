@@ -13,7 +13,10 @@ target 'iOS-Swift-Chao' do
   target 'iOS-Swift-ChaoTests' do
   end
 
+  use_frameworks! #this line is necessary if your project is using Swift
+
   target 'iOS-Swift-ChaoUITests' do
+  pod 'VSMobileCenterExtensions'
   end
 
 

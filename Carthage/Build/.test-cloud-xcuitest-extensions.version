@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "0940a87659c3283926e6a1733ff08fa1482e2aa23c355ee654398aa7b8421812",
+      "name" : "VSMobileCenterExtensions"
+    }
+  ],
+  "commitish" : "0.1.3",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

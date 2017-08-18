@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "f6f634d3dc6c2c7120c13312deef4817"
+build_time: [556354748, 34714000]
+inputs:
+  "/Users/bys/Documents/Chaoyun/iOS-Swift-Chao/iOS-Swift-ChaoUITests/iOS_Swift_ChaoUITests.swift": [556335742, 0]
